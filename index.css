@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Uchen&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk',sans-serif;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right-bg{
+ height: 100vh;
+}
+
+.img-container{
+  position: relative;
+}
+
+.front-cardholder{
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+
+}
+
+.info{
+  background-image: url(images/bg-card-front.png);
+  height: 15.3rem;
+  width: 27.6rem;
+  border-radius: 10px;
+}
+
+.info svg{
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.info div p{
+  display: inline-flex;
+  color: white;
+
+}
+
+.info div h3{
+  color: white;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.info div{
+  margin-top: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.name-date{
+  display: flex;
+  margin-left: -1rem;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+}
+
+.back-cardholder{
+  position: absolute;
+  bottom: 6rem;
+  left: 15rem;
+}
+
+.back-cardholder img{
+  position: relative;
+}
+
+.back-cardholder h3{
+  position: absolute;
+  color: white;
+  top: 6.8rem;
+  left: 22rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  padding-top: 8rem;
+  padding-left: 10rem;
+  width: max-content;
+}
+
+.form-container input{
+  width: 25rem;
+  height: 2.5rem;
+  border: 2px hsl(280, 1%, 45%) solid;
+  border-radius: 5px;
+}
+
+input::placeholder{
+  padding: .8rem;
+  border: none;
+  font-weight: 500;
+}
+
+input:active{
+  border: 2px hsl(278, 76%, 43%) solid;
+}
+
+button{
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border: none;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.error{
+  color: red;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.complete-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 3rem;
+  display: none;
+  margin-top: 14rem;
+  margin-right: 5rem;
+}
+.complete-form svg{
+  padding-bottom: 2rem;
+}
+.complete-form button{
+  width: 22rem;
+  margin-right: 2rem;
+}

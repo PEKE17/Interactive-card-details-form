@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+ 
+</head>
+<body>
+
+  <main>
+    <div class="img-container">
+      <img src="images/bg-main-desktop.png" alt="background" class="right-bg">
+
+      <div class="front-cardholder">
+        <div class="info">
+          <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+          <div>
+            <h3 class="front-num">0000 0000 0000 0000</h3>
+            <div class="name-date">
+              <p id="name">Your Name</p> 
+              <p id="date-front">00/00/00</p>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+      <div class="back-cardholder">
+        <img src="images/bg-card-back.png" alt="">
+        <h3 id="back-num">000</h3>
+      </div>
+      
+    </div>
+
+    <div class="form-container">
+      <form action="">
+        <label for="back-name">CARDHOLDER NAME</label>
+        <input type="text" name="" id="back-name" placeholder="e.g Jamiel Castillon">
+        <p id="error1"></p>
+        <label for="number">CARD NUMBER</label>
+        <input type="text" name="" id="number" placeholder="e.g 123 456 789" maxlength="19">
+        <p id="error2"></p>
+        <p id="error2.2"></p>
+        <label for="date">EXP. DATE (DD/MM/YY)</label>
+        <input type="date" name="" id="date">
+        <p id="error3"></p>
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" placeholder="e.g 123">
+        <p id="error4"></p>
+        <button>Confirm</button>
+      </form>
+
+      <div class="complete-form">
+        <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+        <h1>THANK YOU!</h1>
+        <p>We added your card details</p>
+        <button id="continue">Continue</button>
+      </div>`
+    </div>
+
+ 
+
+  </main>
+
+  
+  
+  <script src="index.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jamiel Castillon</a>.
+  </div> -->
+</body>
+</html>
